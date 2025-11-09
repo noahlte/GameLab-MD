@@ -1,4 +1,4 @@
-# C'est quoi le LUA ?
+# 00. C'est quoi le LUA ?
 
 Le Lua n'est pas un langage de **programmation** à proprement parlé. En effet, c'est un langage de **scripting** qui est embarqué dans d'autres applications pour les **étendre** et leur ajouter des fonctionnalités.
 
