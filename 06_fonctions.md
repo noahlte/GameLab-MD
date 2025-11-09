@@ -1,4 +1,4 @@
-# Les Fonctions en Lua
+# 06. Les Fonctions en Lua
 
 ## Les Fonctions - C'est quoi ?
 
@@ -10,7 +10,7 @@ Au lieu de copier-coller le même code partout, on crée une fonction !
 
 Imagine que tu veux dire "Bonjour" 100 fois dans ton programme.
 
-❌ **Sans fonction :**
+**Sans fonction :**
 ```lua
 print("Bonjour")
 print("Bonjour")
@@ -18,7 +18,7 @@ print("Bonjour")
 -- ... répété 100 fois
 ```
 
-✅ **Avec fonction :**
+**Avec fonction :**
 ```lua
 function direBonjour()
     print("Bonjour")
@@ -491,7 +491,7 @@ afficherBarreVie(100, 100)  -- [==========] 100/100 PV
 
 Une fonction peut s'appeler **ELLE-MÊME** !
 
-⚠️ **ATTENTION :** Il faut toujours une condition d'arrêt, sinon boucle infinie !
+**ATTENTION :** Il faut toujours une condition d'arrêt, sinon boucle infinie !
 
 ### Exemple : Factorielle
 
@@ -521,7 +521,7 @@ print("5! = " .. factorielle(5))  -- 120
 
 ### 1. Oublier les parenthèses
 
-❌ **Mauvais :**
+**Mauvais :**
 ```lua
 function test()
     print("Test")
@@ -530,14 +530,14 @@ end
 test  -- N'APPELLE PAS la fonction
 ```
 
-✅ **Bon :**
+**Bon :**
 ```lua
 test()  -- APPELLE la fonction
 ```
 
 ### 2. Oublier return
 
-❌ **Mauvais :**
+**Mauvais :**
 ```lua
 function multiplier(a, b)
     a * b  -- Ne fait rien !
@@ -547,7 +547,7 @@ local resultat = multiplier(5, 3)
 print(resultat)  -- nil
 ```
 
-✅ **Bon :**
+**Bon :**
 ```lua
 function multiplier(a, b)
     return a * b
@@ -558,18 +558,18 @@ end
 
 ## Bonnes pratiques
 
-✅ Donner des **NOMS CLAIRS** aux fonctions (verbes d'action)
+Donner des **NOMS CLAIRS** aux fonctions (verbes d'action)
 - `calculerScore()`, `afficherMenu()`, `verifierVictoire()`
 
-✅ Une fonction = **UNE TÂCHE**
+Une fonction = **UNE TÂCHE**
 - Pas de fonction qui fait 10 choses différentes
 
-✅ Utiliser `return` pour renvoyer des résultats
+Utiliser `return` pour renvoyer des résultats
 - Au lieu de `print()` dans la fonction
 
-✅ Toujours déclarer les variables locales avec `local`
+Toujours déclarer les variables locales avec `local`
 
-✅ Commenter les fonctions complexes
+Commenter les fonctions complexes
 - Expliquer ce qu'elles font, les paramètres, ce qu'elles retournent
 
 ---
@@ -614,7 +614,7 @@ Crée une calculatrice complète en utilisant des fonctions.
 - Gère les erreurs (division par zéro, nombres invalides)
 
 <details>
-<summary>💡 Voir la correction</summary>
+<summary>Voir la correction</summary>
 
 ```lua
 local function addition(a, b)

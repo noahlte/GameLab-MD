@@ -1,4 +1,4 @@
-# Les Tableaux en Lua
+# 05. Les Tableaux en Lua
 
 ## Les Tableaux - C'est quoi ?
 
@@ -8,7 +8,7 @@ Au lieu de créer plein de variables différentes, on peut tout ranger dans un s
 
 ### Exemple concret
 
-❌ **Sans tableau :**
+**Sans tableau :**
 ```lua
 local joueur1 = "Alice"
 local joueur2 = "Bob"
@@ -17,7 +17,7 @@ local joueur4 = "David"
 ```
 4 variables différentes... imagine avec 100 joueurs !
 
-✅ **Avec tableau :**
+**Avec tableau :**
 ```lua
 local joueurs = {"Alice", "Bob", "Charlie", "David"}
 ```
@@ -64,7 +64,7 @@ local melange = {"texte", 42, true, 3.14}
 
 Chaque élément d'un tableau a un **INDEX** (position).
 
-⚠️ **IMPORTANT :** En Lua, les tableaux commencent à **1** (pas 0 comme dans d'autres langages) !
+**IMPORTANT :** En Lua, les tableaux commencent à **1** (pas 0 comme dans d'autres langages) !
 
 ### Syntaxe
 
@@ -512,20 +512,20 @@ print(phrase)  -- "Bonjour tout le monde"
 
 ### 1. Oublier que Lua commence à 1
 
-❌ **Mauvais :**
+**Mauvais :**
 ```lua
 local tab = {"A", "B", "C"}
 print(tab[0])  -- nil (pas d'élément à l'index 0)
 ```
 
-✅ **Bon :**
+**Bon :**
 ```lua
 print(tab[1])  -- "A" (premier élément)
 ```
 
 ### 2. Oublier # pour la taille
 
-❌ **Mauvais :**
+**Mauvais :**
 ```lua
 local fruits = {"Pomme", "Banane"}
 for i = 1, fruits do  -- ERREUR ! Il faut #fruits
@@ -533,7 +533,7 @@ for i = 1, fruits do  -- ERREUR ! Il faut #fruits
 end
 ```
 
-✅ **Bon :**
+**Bon :**
 ```lua
 for i = 1, #fruits do
     print(fruits[i])
@@ -564,7 +564,7 @@ Crée un programme qui gère les scores d'un jeu.
 - Pour trouver le max : commence avec `scores[1]` puis compare
 
 <details>
-<summary>💡 Voir la correction</summary>
+<summary>Voir la correction</summary>
 
 ```lua
 local scores = {}

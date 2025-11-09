@@ -1,4 +1,4 @@
-# Les Conditions en Lua
+# 03. Les Conditions en Lua
 
 ## Introduction : Lire une entrée utilisateur
 
@@ -329,7 +329,7 @@ local taille = tonumber(io.read())
 **Astuce :** Utilise `string.lower()` pour convertir "OuI" en "oui"
 
 <details>
-<summary>💡 Voir la correction</summary>
+<summary> Voir la correction</summary>
 
 ```lua
 print("Entrez votre taille (en cm) : ")

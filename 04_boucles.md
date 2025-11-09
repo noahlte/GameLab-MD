@@ -1,4 +1,4 @@
-# Les Boucles en Lua
+# 04. Les Boucles en Lua
 
 ## Les Boucles - C'est quoi ?
 
@@ -10,7 +10,7 @@ Au lieu d'écrire 100 fois `print("Bonjour")`, on peut utiliser une boucle !
 
 Imagine que tu veux compter de 1 à 100 :
 
-❌ **Sans boucle :**
+**Sans boucle :**
 ```lua
 print(1)
 print(2)
@@ -19,7 +19,7 @@ print(3)
 print(100)
 ```
 
-✅ **Avec boucle :**
+**Avec boucle :**
 ```lua
 for i = 1, 100 do
     print(i)
@@ -55,7 +55,7 @@ Tant que ... faire
 Fin
 ```
 
-⚠️ **Attention :** Si la condition reste toujours vraie, la boucle ne s'arrête JAMAIS !
+**Attention :** Si la condition reste toujours vraie, la boucle ne s'arrête JAMAIS !
 
 ### Exemple : Compter de 1 à 5
 
@@ -144,7 +144,7 @@ for i = 10, 1, -1 do
     print(i)
 end
 
-print("Décollage ! 🚀")
+print("Décollage !")
 ```
 
 **Résultat :**
@@ -159,7 +159,7 @@ print("Décollage ! 🚀")
 3
 2
 1
-Décollage ! 🚀
+Décollage !
 ```
 
 Le `-1` est le **PAS** (step). Cela signifie qu'on **ENLÈVE 1** à chaque fois.
@@ -399,7 +399,7 @@ end
 
 ### 1. Boucle infinie (ne s'arrête jamais)
 
-❌ **Mauvais exemple :**
+**Mauvais exemple :**
 ```lua
 local i = 1
 while i <= 10 do
@@ -412,7 +412,7 @@ La boucle ne s'arrête **JAMAIS** car `i` reste toujours 1.
 
 ### 2. Mauvais sens (for avec pas négatif)
 
-❌ **Mauvais exemple :**
+**Mauvais exemple :**
 ```lua
 for i = 1, 10, -1 do  -- Ne fait RIEN car on va à l'envers
     print(i)
@@ -421,12 +421,12 @@ end
 
 ### 3. Oublier tonumber() avec io.read()
 
-❌ **Mauvais exemple :**
+**Mauvais exemple :**
 ```lua
 local age = io.read()  -- age est un STRING, pas un nombre !
 ```
 
-✅ **Bon exemple :**
+**Bon exemple :**
 ```lua
 local age = tonumber(io.read())
 ```
@@ -469,7 +469,7 @@ FizzBuzz
 - Commence par vérifier **3 ET 5**, puis **3**, puis **5**, puis le reste
 
 <details>
-<summary>💡 Voir la correction</summary>
+<summary>Voir la correction</summary>
 
 ```lua
 for i = 1, 30 do
@@ -513,7 +513,7 @@ Affiche un message différent selon le nombre de tentatives :
 - 7 tentatives : "De justesse !"
 
 <details>
-<summary>💡 Voir la correction</summary>
+<summary>Voir la correction</summary>
 
 ```lua
 math.randomseed(os.time())

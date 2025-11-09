@@ -1,4 +1,4 @@
-# Les Variables en Lua
+# 02. Les Variables en Lua
 
 ## Les Variables - C'est quoi ?
 
@@ -51,12 +51,12 @@ Noah
 
 En programmation, il y a des règles pour nommer les variables :
 
-❌ **Interdit :**
+**Interdit :**
 - Pas d'accent : `prénom`, `numéro`
 - Pas de caractères spéciaux : `$score`, `prix€`
 - Pas d'espace : `mon nom`
 
-✅ **Autorisé :**
+**Autorisé :**
 - Lettres (a-z, A-Z)
 - Chiffres (0-9) **MAIS** ne peut pas commencer par un chiffre
 - Underscore `_` : `mon_nom`
@@ -288,8 +288,8 @@ print("Dégâts infligés : " .. degatsTotal)  -- 30
 
 En Lua, on utilise le mot-clé `local` devant une variable :
 
-- **local** : la variable existe seulement dans une partie du code ✅
-- **sans local** : la variable existe partout (GLOBAL) ❌ **À ÉVITER !**
+- **local** : la variable existe seulement dans une partie du code
+- **sans local** : la variable existe partout (GLOBAL) **À ÉVITER !**
 
 ### Bonne pratique
 
@@ -327,7 +327,7 @@ Arthur est un guerrier de niveau 5. Il possède 150 PV et 30 mana.
 ```
 
 <details>
-<summary>💡 Voir la correction</summary>
+<summary>Voir la correction</summary>
 
 ```lua
 local nomHeros = "Arthur"
@@ -363,7 +363,7 @@ Tu as vaincu des monstres et tu dois calculer ton score final !
 (score total ÷ nombre total de monstres)
 
 <details>
-<summary>💡 Voir la correction</summary>
+<summary>Voir la correction</summary>
 
 ```lua
 local gobelinsVaincus = 12

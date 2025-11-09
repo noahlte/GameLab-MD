@@ -1,4 +1,4 @@
-# Projet Final - Jeu Textuel en Lua
+# 07. Projet Final - Jeu Textuel en Lua
 
 ## Introduction
 
